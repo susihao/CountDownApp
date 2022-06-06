@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/count_down_bg"
+    tools:context=".count_down_activity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="270dp"
+        android:layout_height="310dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="54dp"
+        android:gravity="center"
+        android:background="@drawable/count_item_bg"
+        android:orientation="vertical"
+        android:paddingRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/event_name"
+            android:layout_width="168dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="48dp"
+            android:gravity="center"
+            android:text="你好呀"
+            android:textColor="@color/item_text_color"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/interval_time"
+            android:layout_width="170dp"
+            android:layout_height="246dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:text="189"
+            android:textColor="@color/item_text_color"
+            android:textSize="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_name" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="63dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/back_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/del_btn"
+        android:layout_width="48dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/del_btn"
+        app:layout_constraintStart_toEndOf="@+id/back_btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

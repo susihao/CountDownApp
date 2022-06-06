@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/ls_event"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="34dp"
+        android:divider="@null"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/me_btn"
+        android:layout_width="96dp"
+        android:layout_height="102dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/refresh_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/add_btn"
+        android:layout_width="96dp"
+        android:layout_height="102dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/add_btn"
+        app:constraintSet="@drawable/add_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/me_btn" />
+
+    <ImageView
+        android:id="@+id/day_plan_btn"
+        android:layout_width="76dp"
+        android:layout_height="72dp"
+        android:src="@drawable/day_plan"
+        app:constraintSet="@drawable/day_plan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/add_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
